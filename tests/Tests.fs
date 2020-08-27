@@ -97,6 +97,11 @@ let nestedTestCase =
         ]
     ]
 
+let toastrTest =
+    testList "Toastr" [
+        testCase "Toastr test case" <| fun _ -> Expect.isTrue ToastrTests.returnTrue "Should be true"
+    ]
+
 let focusedTestsCases =
     testList "Focused" [
         ftestCase "Focused sync test" <| fun _ ->
@@ -112,6 +117,7 @@ let allTests = testList "All" [
     secondModuleTests
     structuralEqualityTests
     nestedTestCase
+    toastrTest
     // focusedTestsCases
 ]
 

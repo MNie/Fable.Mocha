@@ -1,9 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <OutputType>exe</OutputType>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ToastrTests.fs" />
     <Compile Include="Tests.fs" />
   </ItemGroup>
   <PropertyGroup Condition="'$(Configuration)'=='EXPECTO'">
@@ -16,6 +17,7 @@
     <PackageReference Include="expecto" Version="8.10.1" />
     <PackageReference Include="Fable.Core" Version="3.0.0" />
     <PackageReference Include="Fable.SimpleJson" Version="3.0.0" />
+    <PackageReference Include="Elmish.Toastr" Version="2.1.0" />
   </ItemGroup>
 
 </Project>
